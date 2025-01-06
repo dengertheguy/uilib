@@ -2978,6 +2978,17 @@ function Library:CreateWindow(...)
         ZIndex = 1;
         Parent = ScreenGui;
     });
+
+    local Inner = Library:Create('Frame', {
+        BackgroundColor3 = Library.MainColor,
+        BorderColor3 = Library.OutlineColor,
+        BorderMode = Enum.BorderMode.Inset,
+        Position = UDim2.new(0, 1, 0, 1),
+        Size = UDim2.new(1, -2, 1, -2),
+        ZIndex = 2;
+        Parent = Outer;
+    });
+    
     Library:ApplyStroke(Outer);
     Library:MakeDraggable(Outer, 25);
 
