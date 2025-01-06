@@ -3986,6 +3986,9 @@ function Library:CreateWindow(...)
 
                 Tab.Container = Container;
                 Tabbox.Tabs[Name] = Tab;
+                if #TabboxButtons:GetChildren() == 2 then
+                    Tab:Show();
+                end;
 
                 setmetatable(Tab, BaseGroupbox);
 
