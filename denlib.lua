@@ -3699,7 +3699,7 @@ function Library:CreateWindow(...)
                 TextXAlignment = Enum.TextXAlignment.Center;
                 ZIndex = 5;
                 Parent = BoxInner;
-                Font = Enum.Font.GothamBold;
+                Font = Enum.Font.Gotham;
             });
 
             Library:Create('UICorner', {
