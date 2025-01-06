@@ -3152,7 +3152,7 @@ function Library:CreateWindow(...)
         local TabButton = Library:Create('Frame', {
             BackgroundColor3 = Library.BackgroundColor;
             BorderColor3 = Library.OutlineColor;
-            Size = UDim2.new(0, 100, 1, 0); 
+            Size = UDim2.new(0, 65, 1, 0); 
             LayoutOrder = #Window.Tabs + 1; 
             ZIndex = 1;
             Parent = TabArea;
