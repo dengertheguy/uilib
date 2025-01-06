@@ -3885,6 +3885,7 @@ function Library:CreateWindow(...)
                     TextXAlignment = Enum.TextXAlignment.Center;
                     ZIndex = 7;
                     Parent = Button;
+                    Font = Enum.Font.Gotham;
                 });
 
                 Library:OnHighlight(Button, Button,
