@@ -1169,7 +1169,7 @@ do
             TextXAlignment = Enum.TextXAlignment.Left;
             Size = UDim2.new(1, 0, 0, 12);
             TextSize = 13;
-            Visible = false;
+            Visible = true;
             ZIndex = 110;
             Parent = Library.KeybindContainer;
         },  true);
