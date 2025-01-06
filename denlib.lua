@@ -3757,7 +3757,14 @@ function Library:CreateWindow(...)
                 ZIndex = 2;
                 Parent = Info.Side == 1 and LeftSide or RightSide;
             });
-
+            Library:Create('UIStroke', {
+                Color = Library.OutlineColor;
+                Thickness = 1;
+                Parent = BoxOuter;
+            });
+            Library:AddToRegistry(BoxOuter.UIStroke, {
+                Color = 'OutlineColor';
+            });
             Library:Create('UICorner', {
                 CornerRadius = UDim.new(0, 4),
                 Parent = BoxOuter
