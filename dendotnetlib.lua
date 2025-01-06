@@ -1094,7 +1094,7 @@ do
 
         local ContainerLabel = Library:CreateLabel({
             TextXAlignment = Enum.TextXAlignment.Left;
-            Size = UDim2.new(1, 0, 0, 18);
+            Size = UDim2.new(1, 0, 0, 12);
             TextSize = 13;
             Visible = false;
             ZIndex = 110;
