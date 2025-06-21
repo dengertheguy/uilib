@@ -32,10 +32,10 @@ local Library = {
     HudRegistry = {};
 
     FontColor = Color3.fromRGB(255, 255, 255);
-    MainColor = Color3.fromRGB(28, 28, 28);
-    BackgroundColor = Color3.fromRGB(20, 20, 20);
-    AccentColor = Color3.fromRGB(106,90,205);
-    OutlineColor = Color3.fromRGB(50, 50, 50);
+    MainColor = Color3.fromRGB(34, 34, 34);
+    BackgroundColor = Color3.fromRGB(3, 3, 3);
+    AccentColor = Color3.fromRGB(255, 255, 255);
+    OutlineColor = Color3.fromRGB(63, 63, 63);
     RiskColor = Color3.fromRGB(255, 50, 50),
 
     Black = Color3.new(0, 0, 0);
@@ -2944,7 +2944,8 @@ do
 
     local WatermarkOuter = Library:Create('Frame', {
         BorderColor3 = Color3.new(0, 0, 0);
-        Position = UDim2.new(0, 100, 0, -25);
+        AnchorPoint = Vector2.new(0.5, 0); -- anchor to middle horizontally
+        Position = UDim2.new(0.5, 0, 0, 8); -- 8 pixels from the top
         Size = UDim2.new(0, 213, 0, 20);
         ZIndex = 200;
         Visible = false;
