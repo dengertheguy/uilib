@@ -1,6 +1,6 @@
 local httpService = game:GetService('HttpService')
 local ThemeManager = {} do
-	ThemeManager.Folder = 'VitalLibarySettings'
+	ThemeManager.Folder = 'den.net Theme Settings'
 	-- if not isfolder(ThemeManager.Folder) then makefolder(ThemeManager.Folder) end
 
 	ThemeManager.Library = nil
